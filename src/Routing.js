@@ -10,7 +10,7 @@ const Stack = createStackNavigator();
 export default function Routing() {
     return (
         <NavigationContainer>
-            <Stack.Navigator screenOptions={{HeaderShown: false}}>
+            <Stack.Navigator screenOptions={{headerShown: false}}>
                 <Stack.Screen name="SplashScreen" component={SplashScreen}/>
                 <Stack.Screen name="AuthNavigation" component={AuthNavigation}/>
             </Stack.Navigator>

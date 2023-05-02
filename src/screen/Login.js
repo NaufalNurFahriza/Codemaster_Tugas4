@@ -133,6 +133,7 @@ const Login = ({
                      </TouchableOpacity>
                   </View>
                   <TouchableOpacity
+                  onPress={() => navigation.navigate('ButtonNav')}
                      style={{
                         width: '100%',
                         marginTop: 30,

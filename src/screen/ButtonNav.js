@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { View, Text, TouchableOpacity, Image, } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Home from './Home';
+import Profile from './Profile';
 
 function MyTabBar({ state, descriptors, navigation }) {
   return (
@@ -76,7 +78,7 @@ export default function ButtonNav() {
         <Tab.Screen name="Home" component={Home} options={{
           headerShown: false
         }} />
-        <Tab.Screen name="Profile" component={DataPicker} options={{
+        <Tab.Screen name="Profile" component={Profile} options={{
           headerShown: false
         }} />
       </Tab.Navigator>
