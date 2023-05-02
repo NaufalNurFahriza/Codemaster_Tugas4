@@ -2,7 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 
-import SplashScreen from "./screen/Splashscreen";
+import SplashScreen from "./screen/SplashScreen";
 import AuthNavigation from "./AuthNavigation";
 
 const Stack = createStackNavigator();

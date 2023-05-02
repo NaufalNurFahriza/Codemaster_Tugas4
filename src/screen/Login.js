@@ -27,7 +27,7 @@ const Login = ({
                keyboardVerticalOffset={-500}
             >
                <Image
-                  source={require('./asset/image/image_login.png')} //load atau panggil asset image dari local
+                  source={require('../assets/image/image_login.png')} //load atau panggil asset image dari local
                   style={{
                      width: Dimensions.get('window').width, //atur agar lebar gambar adalah selebar layar device
                      height: 317
@@ -87,7 +87,7 @@ const Login = ({
                         }
                         <TouchableOpacity>
                            <Image
-                              source={require('./asset/icon/google_ic.png')} //load asset dari local
+                              source={require('../assets/icon/google_ic.png')} //load asset dari local
                               style={{
                                  width: 20, 
                                  height: 20, 
@@ -97,7 +97,7 @@ const Login = ({
                         </TouchableOpacity>
                         <TouchableOpacity>
                            <Image
-                              source={require('./asset/icon/facebook_ic.png')}
+                              source={require('../assets/icon/facebook_ic.png')}
                               style={{
                                  width: 20, 
                                  height: 20, 
@@ -108,7 +108,7 @@ const Login = ({
                         </TouchableOpacity>
                         <TouchableOpacity>
                            <Image
-                              source={require('./asset/icon/twitter_ic.png')}
+                              source={require('../assets/icon/twitter_ic.png')}
                               style={{
                                  width: 20, 
                                  height: 20, 
@@ -117,6 +117,7 @@ const Login = ({
                            />
                         </TouchableOpacity>
                      </View>
+                     {/* <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')} /> */}
                      <TouchableOpacity
                         style={{
                            flexDirection: 'row',
@@ -163,7 +164,7 @@ const Login = ({
                      }}>
                         Don't Have An Account yet?
                      </Text>
-                     <TouchableOpacity>
+                     <TouchableOpacity onPress={() => navigation.navigate('Register')}>
                         <Text style={{
                            fontSize: 14, 
                            color: '#BB2427', 
